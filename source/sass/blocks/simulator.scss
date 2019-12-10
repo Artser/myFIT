@@ -1,6 +1,7 @@
 .simulator {
-  padding: 120px 103px;
+  padding: 120px 0;
   display: flex;
+  padding-left: 19px;
 }
 
 .simulator__description {
@@ -8,7 +9,7 @@
   flex-shrink: 0;
   padding-left: 60px;
   padding-top: 45px;
-  margin-right: auto;
+  margin-right: 90px;
 }
 
 .simulator__title {
@@ -19,6 +20,39 @@
   line-height: 49px;
   letter-spacing: 1.7px;
   color: #102654;
+}
+
+.button {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  width: 100px;
+  height: 100px;
+  padding: 12px;
+  border-radius: 50%;
+  background-image: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
+  background-clip: content-box;
+  border: 2px solid transparent;
+  border-image-source: url("../img/border-img.png");
+  border-image-slice: fill 1.5;
+  outline: none;
+
+  & svg {
+    margin: auto;
+    margin-right: 27px;
+    fill: white;
+  }
+}
+
+.button:hover {
+  background-image: linear-gradient(44.89deg, #b80027 25.38%, #003d85 74.89%);
+
+  & svg {
+    fill: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .simulator__lead {
@@ -48,16 +82,21 @@
 
 .simulator__images {
   position: relative;
-  width: 724px;
+  width: 660px;
+  height: 401px;
   padding-left: 5.5%;
   padding-bottom: 9.9%;
+  background-image: url("../img/foto-hall.png");
 }
 
 .simulator__video {
   position: absolute;
   display: block;
-  bottom: 0;
-  left: 1px;
+  top: 290px;
+  left: -61px;
+  width: 364px;
+  height: 228px;
+  background-image: url("../img/foto-video.png");
 
   &::before {
     content: "";
@@ -67,45 +106,21 @@
     background-color: rgba(20, 54, 122, 0.5);
   }
 
-  & a {
-    position: absolute;
-    display: flex;
-    top: 50%;
-    left: 50%;
-    margin-left: -50px;
-    margin-top: -50px;
-    width: 100px;
-    height: 100px;
-    padding: 12px;
-    border-radius: 50%;
-    background-image: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
-    background-clip: content-box;
-    border: 2px solid transparent;
-    border-image-source: url("../img/border-img.png");
-    border-image-slice: fill 1.5;
-    outline: none;
+  // &:hover {
+  //   background-image: linear-gradient(44.89deg, #b80027 25.38%, #003d85 74.89%);
 
-    &:hover {
-      background-image: linear-gradient(44.89deg, #b80027 25.38%, #003d85 74.89%);
+  //   & svg {
+  //     fill: rgba(255, 255, 255, 0.3);
+  //   }
+  // }
 
-      & svg {
-        fill: rgba(255, 255, 255, 0.3);
-      }
-    }
+  // &:focus {
+  //   background-image: linear-gradient(44.89deg, #b80027 25.38%, #003d85 74.89%);
 
-    &:focus {
-      background-image: linear-gradient(44.89deg, #b80027 25.38%, #003d85 74.89%);
-
-      & svg {
-        fill: rgba(255, 255, 255, 0.3);
-      }
-    }
-  }
-
-  & svg {
-    margin: auto;
-    margin-right: 27px;
-  }
+  //   & svg {
+  //     fill: rgba(255, 255, 255, 0.3);
+  //   }
+  // }
 }
 
 @media (max-width: $tablet) {
@@ -125,6 +140,10 @@
     width: 100%;
     padding-left: 0;
     padding-top: 0;
+  }
+
+  .simulator__text--hidden {
+    @include hidden();
   }
 
   .simulator__lead {
@@ -147,10 +166,13 @@
     height: 345px;
     margin: 0 auto;
     padding: 0;
+    background-size: contain;
+    background-image: url("../img/hall-tablet.png");
 
     & > img {
-      width: 100%;
-      height: 100%;
+      //background-size: cover;
+      width: 678px;
+      height: 345px;
     }
   }
 
@@ -158,8 +180,10 @@
     bottom: -24%;
     left: 50%;
     margin-left: -133px;
+    width: 266px;
+    height: 167px;
 
-    & a {
+    & button {
       margin-left: -36.5px;
       margin-top: -36.5px;
       width: 73px;
@@ -183,13 +207,14 @@
 @media (max-width: $mobile) {
   .simulator {
     padding: 67px 0 70px;
+    min-height: 856px;
   }
 
   .simulator__description {
     padding: 0 15px 33px;
   }
 
-  .gym__title {
+  .simulator__title {
     font-size: 32px;
     line-height: 32px;
     text-align: left;
@@ -208,8 +233,10 @@
 
   .simulator__images {
     width: 100%;
-    height: auto;
+    height: 313px;
+    background-repeat: no-repeat;
     padding: 0;
+    background-image: url("../img/hall-mobile.png");
   }
 
   .simulator__images > img {
@@ -220,18 +247,20 @@
 
   .simulator__video {
     position: relative;
-    top: 0;
+    top: 354px;
     left: 0;
     margin: 0;
     min-height: 167px;
     overflow: hidden;
+    width: 320px;
+    background-image: url("../img/video-mobile.png");
 
     & img {
       width: 100%;
       height: auto;
     }
 
-    & a {
+    & button {
       margin-left: -36.5px;
       margin-top: -36.5px;
       width: 73px;

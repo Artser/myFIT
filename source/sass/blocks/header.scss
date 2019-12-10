@@ -108,6 +108,7 @@
   @media (max-width: $mobile) {
     padding-left: 0;
     width: 100%;
+    margin-left: 0;
   }
 }
 
@@ -159,7 +160,7 @@
   }
 
   @media (max-width: $mobile) {
-    width: 213px;
+    width: 320px;
     font-size: 78px;
     line-height: 78px;
     margin-top: 9px;
@@ -189,7 +190,7 @@
   }
 
   @media (max-width: $mobile) {
-    margin-right: 176px;
+    margin-right: 193px;
     margin-top: -124px;
     margin-left: auto;
   }
@@ -226,7 +227,7 @@
   }
 
   @media (max-width: $mobile) {
-    width: 100%;
+    width: 290px;
     margin-right: auto;
     margin-left: auto;
     margin-top: 53px;
