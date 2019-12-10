@@ -208,6 +208,8 @@
   .simulator {
     padding: 67px 0 70px;
     min-height: 856px;
+    display: flex;
+    flex-direction: column;
   }
 
   .simulator__description {
@@ -232,7 +234,7 @@
   }
 
   .simulator__images {
-    width: 100%;
+    width: auto;
     height: 313px;
     background-repeat: no-repeat;
     padding: 0;
