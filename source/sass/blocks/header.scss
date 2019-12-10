@@ -59,12 +59,12 @@
 .header-presentation {
   display: flex;
   padding-bottom: 50px;
-  max-width: 1366px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
   //background: transparent url("../img/bg-header-foto-desktop@1x.jpg") no-repeat   563px 0;
   background-size: auto;
+  max-width: 1200px;
 
   @media (max-width: $tablet) {
     margin-top: 19px;
@@ -82,7 +82,7 @@
 
 .header-presentation__wrapper {
   display: flex;
-  width: 1050px;
+  width: 1133px;
   margin-left: auto;
 
   @media (max-width: $tablet) {
@@ -94,14 +94,15 @@
 .header-info {
   display: flex;
   flex-direction: column;
-  padding-right: 74px;
-  padding-left: 10px;
-  margin-right: -10px;
+  padding-right: 50px;
+  padding-left: 28px;
+  //margin-right: -22px;
 
   @media (max-width: $tablet) {
     margin: 0;
     padding: 0;
     padding-left: 6px;
+    margin-left: 10px;
   }
 
   @media (max-width: $mobile) {
@@ -120,6 +121,7 @@
   color: #ffffff;
   margin-top: 116px;
   margin-bottom: 0;
+  padding-right: 12px;
 
   @media (max-width: $tablet) {
     font-size: 34px;
@@ -146,7 +148,8 @@
   color: #ffffff;
   width: 320px;
   margin-left: auto;
-  margin-top: 5px;
+  margin-top: 9px;
+  padding-right: 14px;
 
   @media (max-width: $tablet) {
     font-size: 86px;
@@ -210,7 +213,8 @@
   min-height: 57px;
   padding: 20px 5px;
   margin-left: auto;
-  margin-top: 81px;
+  margin-top: 77px;
+  margin-right: 14px;
 
   &:hover {
     opacity: 0.5;
@@ -239,9 +243,8 @@
     max-width: 324px;
     min-width: 324px;
     height: 390px;
-    margin-left: 29px;
-    background: transparent url("../../img/bg-header-foto-tablet@1x.jpg")
-      no-repeat;
+    margin-left: 15px;
+    background: transparent url("../img/bg-header-foto-tablet@1x.jpg") no-repeat;
   }
 
   @media (max-width: $mobile) {

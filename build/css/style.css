@@ -5,7 +5,7 @@
 /*Regular*/
 @font-face {
   font-family: "Bebas Neue";
-  src: url("../fonts/Bebas/bebasneueregular.woff2") format("woff2"), url("../fonts/Bebas/bebasneueregular.woff") format("woff");
+  src: url("../fonts/Bebas/ofont.ru_Bebas Neue.woff2") format("woff2"), url("../fonts/Bebas/BebasNeueCyrillic.woff") format("woff");
   font-display: swap;
   font-weight: 400;
   font-style: normal; }
@@ -170,11 +170,11 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 50px;
-  max-width: 1366px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  background-size: auto; }
+  background-size: auto;
+  max-width: 1200px; }
   @media (max-width: 1199px) {
     .header-presentation {
       margin-top: 19px;
@@ -192,7 +192,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1050px;
+  width: 1133px;
   margin-left: auto; }
   @media (max-width: 1199px) {
     .header-presentation__wrapper {
@@ -207,14 +207,14 @@ input[type="radio"].visually-hidden {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-right: 74px;
-  padding-left: 10px;
-  margin-right: -10px; }
+  padding-right: 50px;
+  padding-left: 28px; }
   @media (max-width: 1199px) {
     .header-info {
       margin: 0;
       padding: 0;
-      padding-left: 6px; } }
+      padding-left: 6px;
+      margin-left: 10px; } }
   @media (max-width: 767px) {
     .header-info {
       padding-left: 0;
@@ -229,7 +229,8 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   color: #ffffff;
   margin-top: 116px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  padding-right: 12px; }
   @media (max-width: 1199px) {
     .header-info__city {
       font-size: 34px;
@@ -253,7 +254,8 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   width: 320px;
   margin-left: auto;
-  margin-top: 5px; }
+  margin-top: 9px;
+  padding-right: 14px; }
   @media (max-width: 1199px) {
     .header-info__title {
       font-size: 86px;
@@ -317,7 +319,8 @@ input[type="radio"].visually-hidden {
   min-height: 57px;
   padding: 20px 5px;
   margin-left: auto;
-  margin-top: 81px; }
+  margin-top: 77px;
+  margin-right: 14px; }
   .header-info__buy:hover {
     opacity: 0.5; }
   @media (max-width: 1199px) {
@@ -341,8 +344,8 @@ input[type="radio"].visually-hidden {
       max-width: 324px;
       min-width: 324px;
       height: 390px;
-      margin-left: 29px;
-      background: transparent url("../../img/bg-header-foto-tablet@1x.jpg") no-repeat; } }
+      margin-left: 15px;
+      background: transparent url("../img/bg-header-foto-tablet@1x.jpg") no-repeat; } }
   @media (max-width: 767px) {
     .header__image {
       display: none; } }
