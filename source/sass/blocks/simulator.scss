@@ -2,6 +2,7 @@
   padding: 120px 0;
   display: flex;
   padding-left: 19px;
+  margin-bottom: 113px;
 }
 
 .simulator__description {
@@ -10,6 +11,7 @@
   padding-left: 60px;
   padding-top: 45px;
   margin-right: 90px;
+  position: relative;
 }
 
 .simulator__title {
@@ -25,10 +27,9 @@
 .button {
   position: absolute;
   display: flex;
-  top: 50%;
-  left: 50%;
-  margin-left: -50px;
-  margin-top: -50px;
+  top: 27%;
+  left: 36%;
+
   width: 100px;
   height: 100px;
   padding: 12px;
@@ -81,7 +82,7 @@
 }
 
 .simulator__images {
-  position: relative;
+  //position: relative;
   width: 660px;
   height: 401px;
   padding-left: 5.5%;
@@ -93,7 +94,8 @@
   position: absolute;
   display: block;
   top: 290px;
-  left: -61px;
+
+  left: 437px;
   width: 364px;
   height: 228px;
   background-image: url("../img/foto-video.png");
@@ -127,6 +129,7 @@
   .simulator {
     display: block;
     padding: 98px 45px 182px;
+    margin-bottom: 2px;
   }
 
   .simulator__title {
@@ -177,15 +180,15 @@
   }
 
   .simulator__video {
-    bottom: -24%;
-    left: 50%;
-    margin-left: -133px;
+    top: 215%;
+    left: 30.5%;
+    background-image: url("../img/video-tablet.png");
     width: 266px;
     height: 167px;
 
     & button {
-      margin-left: -36.5px;
-      margin-top: -36.5px;
+      margin-left: 1%;
+      margin-top: 1%;
       width: 73px;
       height: 73px;
       padding: 8px;
@@ -206,14 +209,14 @@
 
 @media (max-width: $mobile) {
   .simulator {
-    padding: 67px 0 70px;
-    min-height: 856px;
     display: flex;
     flex-direction: column;
+    padding: 67px 0 138px;
   }
 
   .simulator__description {
     padding: 0 15px 33px;
+    margin-bottom: -165px;
   }
 
   .simulator__title {
@@ -234,11 +237,12 @@
   }
 
   .simulator__images {
-    width: auto;
+    width: 320px;
     height: 313px;
     background-repeat: no-repeat;
     padding: 0;
     background-image: url("../img/hall-mobile.png");
+    margin-bottom: 136px;
   }
 
   .simulator__images > img {
@@ -247,11 +251,15 @@
     min-height: 313px;
   }
 
+  .simulator__text--hidden {
+    display: none;
+  }
+
   .simulator__video {
     position: relative;
-    top: 354px;
-    left: 0;
-    margin: 0;
+    top: 387px;
+    left: -15px;
+    margin: 0 auto;
     min-height: 167px;
     overflow: hidden;
     width: 320px;
@@ -263,8 +271,8 @@
     }
 
     & button {
-      margin-left: -36.5px;
-      margin-top: -36.5px;
+      margin-left: 10.5px;
+      margin-top: 1.5px;
       width: 73px;
       height: 73px;
       padding: 8px;

@@ -17,7 +17,7 @@
   @media (max-width: $tablet) {
     padding-top: 39px;
     padding-left: 44px;
-    padding-right: 46px;
+    padding-right: 43px;
   }
 
   @media (max-width: $mobile) {
@@ -49,7 +49,7 @@
 }
 
 .header-contact__phone {
-  letter-spacing: 0.035em;
+  letter-spacing: 0.03em;
 
   &:hover {
     opacity: 0.5;
@@ -82,7 +82,7 @@
 
 .header-presentation__wrapper {
   display: flex;
-  width: 1133px;
+  width: 1142px;
   margin-left: auto;
 
   @media (max-width: $tablet) {
@@ -95,7 +95,7 @@
   display: flex;
   flex-direction: column;
   padding-right: 50px;
-  padding-left: 28px;
+  padding-left: 15px;
   //margin-right: -22px;
 
   @media (max-width: $tablet) {
@@ -179,13 +179,13 @@
   text-align: right;
   color: #ffffff;
   width: 113px;
-  height: 51px;
-  margin-right: 265px;
-  margin-top: -157px;
+  //height: 51px;
+  margin-right: 282px;
+  margin-top: -160px;
 
   @media (max-width: $tablet) {
     margin-right: 206px;
-    margin-left: -6px;
+    margin-left: -16px;
     margin-top: -133px;
   }
 
@@ -214,7 +214,7 @@
   min-height: 57px;
   padding: 20px 5px;
   margin-left: auto;
-  margin-top: 77px;
+  margin-top: 69px;
   margin-right: 14px;
 
   &:hover {
@@ -223,14 +223,14 @@
 
   @media (max-width: $tablet) {
     width: 187px;
-    margin-top: 54px;
+    margin-top: 41px;
   }
 
   @media (max-width: $mobile) {
     width: 290px;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 53px;
+    margin-top: 41px;
   }
 }
 
@@ -276,7 +276,7 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 18px;
-  margin-right: -4px;
+  margin-right: 0;
 
   &:hover {
     opacity: 0.5;

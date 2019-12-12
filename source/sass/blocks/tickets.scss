@@ -1,0 +1,216 @@
+.tickets {
+  background: white;
+  position: relative;
+  padding-bottom: 121px;
+  overflow: hidden;
+}
+
+.tickets__container {
+  padding: 115px 12px 78px;
+  background: #f8f9fc;
+  text-align: center;
+  //flex: 0 0 100%;
+
+  &::after {
+    background: transparent url("../img/disk-desktop.png") no-repeat;
+    //right: -80px;
+    //bottom: -72px;
+    position: absolute;
+    content: "";
+    width: 425px;
+    height: 494px;
+    background-size: cover;
+    transform: translateX(395px);
+    /* top: 449px; */
+    bottom: -72px;
+  }
+}
+
+.tickets__title {
+  @include indent-reset();
+  font-weight: normal;
+  margin: 0 auto;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 1.7px;
+  text-align: center;
+  color: #102654;
+}
+
+.tickets__duration-container {
+  max-width: 1366px;
+  padding: 0 103px;
+  width: auto;
+  display: inline-block;
+  margin: 0 auto 40px;
+}
+
+.tickets__duration {
+  padding-top: 38px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.tickets__btn {
+  @include indent-reset();
+  margin-bottom: -2px;
+  display: block;
+  padding-bottom: 10px;
+  width: auto;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 150%;
+  color: #102654;
+  cursor: pointer;
+  outline: none;
+
+  &:not(:last-of-type) {
+    margin-right: 47px;
+  }
+
+  &:hover {
+    text-shadow: 0 0 0.95px #102654;
+  }
+
+  &:focus {
+    text-shadow: 0 0 0.95px #102654;
+  }
+
+  &--active {
+    border-bottom: 2px solid $red;
+  }
+}
+
+.tickets__list {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1160px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.tickets__list > .pass__item {
+  width: 31%;
+  flex-grow: 0;
+  flex-shrink: 1;
+  margin-bottom: 40px;
+
+  &:not(:nth-of-type(3n)) {
+    margin-right: 3.5%;
+  }
+}
+
+@media (max-width: $tablet) {
+  .tickets {
+    padding-bottom: 100px;
+  }
+
+  .tickets__container {
+    padding: 98px 45px 60px;
+
+    &::after {
+      //background: transparent url("../img/bg-plate-tablet@1x.png") no-repeat 100% 106%;
+      transform: translateX(0);
+      bottom: -26px;
+      width: 347px;
+      height: 444px;
+    }
+  }
+
+  .tickets__title {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .tickets__btn {
+    padding: 0 4px 11px;
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  .tickets__duration-container {
+    padding: 0 45px;
+    margin: 0 auto 43px;
+  }
+
+  .tickets__duration {
+    padding-top: 32px;
+  }
+
+  .tickets__list {
+    display: block;
+  }
+
+  .tickets__list > .tickets__item {
+    width: 65.3%;
+
+    &:nth-of-type(n) {
+      margin: 0 auto 40px;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .tickets {
+    padding-bottom: 71px;
+  }
+
+  .tickets__container {
+    padding: 68px 15px 33px;
+
+    &::after {
+      background: none;
+    }
+  }
+
+  .tickets__title {
+    padding: 0 15px;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 1.3px;
+    margin-bottom: 1px;
+  }
+
+  .tickets__duration-container {
+    padding: 0;
+    margin: 0 auto 34px;
+  }
+
+  .tickets__duration {
+    padding-top: 24px;
+    width: 100%;
+  }
+
+  .tickets__list {
+    padding: 0;
+  }
+
+  .tickets__btn {
+    padding: 0 0 11px;
+    font-size: 16px;
+
+    &:not(:last-of-type),
+    &:not(:nth-of-type(3n)) {
+      margin-right: 45px;
+    }
+  }
+
+  .tickets__list > .tickets__item {
+    width: 100%;
+    z-index: initial;
+
+    &:nth-of-type(n) {
+      margin: 0 auto 34px;
+    }
+  }
+}
