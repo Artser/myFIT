@@ -1,0 +1,56 @@
+.coaches {
+  padding-top: 74px;
+  padding-bottom: 120px;
+
+  h2 {
+    //@include title-desktop;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 49px;
+    line-height: 49px;
+    letter-spacing: 0.03em;
+
+    color: #102654;
+  }
+}
+
+.coaches__slider {
+  position: relative;
+  margin: 0 auto;
+}
+
+.coaches__title {
+  padding-left: 21px;
+  padding-bottom: 4px;
+}
+
+@media (max-width: $tablet-width-max) {
+  .coaches {
+    padding-top: 39px;
+    padding-bottom: 100px;
+
+    h2 {
+      @include title-tablet;
+      text-align: center;
+    }
+  }
+
+  .coaches__slider {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: $phone-width-max) {
+  .coaches {
+    padding-top: 8px;
+    padding-bottom: 71px;
+
+    h2 {
+      @include title-phone;
+    }
+  }
+
+  .coaches__slider {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
