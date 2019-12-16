@@ -3,8 +3,8 @@
   max-width: 1270px;
   min-width: 320px;
   box-sizing: border-box;
-  padding-left: 55px;
-  padding-right: 55px;
+  padding-left: 21px;
+  padding-right: 20px;
   margin: 0 auto;
 }
 
@@ -19,30 +19,39 @@
 
 .slider__name {
   text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .slider__item-anna {
   background-image: url("../img/trainer1@1x.png");
+  background-repeat: no-repeat;
 }
 
 .slider__item-alex {
   background-image: url("../img/trainer2@1x.png");
+  background-repeat: no-repeat;
 }
 
 .slider__item-Aleksandr {
   background-image: url("../img/trainer3@1x.png");
+  background-repeat: no-repeat;
 }
 
 .slider__item-maria {
   background-image: url("../img/trainer4@1x.png");
+  background-repeat: no-repeat;
 }
 
 .slider__item-man1 {
   background-image: url("../img/man1.jpg");
+  background-repeat: no-repeat;
 }
 
 .slider__item-man2 {
   background-image: url("../img/man2.jpg");
+  background-repeat: no-repeat;
 }
 
 .slider__item-man3 {
@@ -131,7 +140,7 @@
   // box-sizing: border-box;
   // //top: 0;
   // left: 0;
-  // background-color: rgba(16, 38, 84, 0.89);
+  //background-color: rgba(16, 38, 84, 0.89);
   // font-size: 18px;
   // line-height: 150%;
   // text-align: center;
@@ -198,6 +207,17 @@
     padding-right: 55px;
   }
 
+  .slider__item-anna,
+  .slider__item-alex,
+  .slider__item-Aleksandr,
+  .slider__item-maria,
+  .slider__item-man1,
+  .slider__item-man2,
+  .slider__item-man3,
+  .slider__item-man4 {
+    background-size: 268px 294px;
+  }
+
   .slider__wrapper {
     width: 566px;
     margin-top: 42px;
@@ -215,6 +235,17 @@
     max-width: 320px;
     padding-left: 25px;
     padding-right: 25px;
+  }
+
+  .slider__item-anna,
+  .slider__item-alex,
+  .slider__item-Aleksandr,
+  .slider__item-maria,
+  .slider__item-man1,
+  .slider__item-man2,
+  .slider__item-man3,
+  .slider__item-man4 {
+    background-size: 226px 274px;
   }
 
   .slider__wrapper {

@@ -19,13 +19,13 @@
 }
 
 .coaches__title {
-  padding-left: 21px;
+  padding-left: 23px;
   padding-bottom: 4px;
 }
 
 @media (max-width: $tablet-width-max) {
   .coaches {
-    padding-top: 39px;
+    padding-top: 95px;
     padding-bottom: 100px;
 
     h2 {
@@ -37,12 +37,16 @@
   .coaches__slider {
     max-width: 700px;
   }
+
+  .coaches__title {
+    padding-left: 43px;
+  }
 }
 
 @media (max-width: $phone-width-max) {
   .coaches {
-    padding-top: 8px;
-    padding-bottom: 71px;
+    padding-top: 66px;
+    padding-bottom: 65px;
 
     h2 {
       @include title-phone;
@@ -52,5 +56,9 @@
   .coaches__slider {
     max-width: 320px;
     margin: 0 auto;
+  }
+
+  .coaches__title {
+    padding-left: 17px;
   }
 }
