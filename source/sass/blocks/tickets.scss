@@ -3,27 +3,32 @@
   position: relative;
   padding-bottom: 121px;
   overflow: hidden;
+  // background: url("../img/disk-desktop.png") no-repeat;
+  // background-size: 425px 494px;
+  // background-position: 100% 106%;
 }
-
+.tickets__item--none{
+  display: none;
+}
 .tickets__container {
   padding: 115px 12px 78px;
   background: #f8f9fc;
   text-align: center;
   //flex: 0 0 100%;
 
-  &::after {
-    background: transparent url("../img/disk-desktop.png") no-repeat;
-    //right: -80px;
-    //bottom: -72px;
-    position: absolute;
-    content: "";
-    width: 425px;
-    height: 494px;
-    background-size: cover;
-    transform: translateX(395px);
-    /* top: 449px; */
-    bottom: -72px;
-  }
+   &::after {
+  background: transparent url("../img/disk-desktop.png") no-repeat;
+  //right: -80px;
+  //bottom: -72px;
+   position: absolute;
+  content: "";
+   width: 425px;
+   height: 494px;
+   background-size: cover;
+   transform: translateX(395px);
+  /* top: 449px; */
+   bottom: -72px;
+   }
 }
 
 .tickets__title {

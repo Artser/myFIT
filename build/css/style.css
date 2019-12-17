@@ -134,7 +134,7 @@ input[type="radio"].visually-hidden {
     .header-contact {
       padding-top: 39px;
       padding-left: 44px;
-      padding-right: 43px; } }
+      padding-right: 44px; } }
   @media (max-width: 767px) {
     .header-contact {
       padding-top: 18px;
@@ -165,6 +165,14 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.03em; }
   .header-contact__phone:hover {
     opacity: 0.5; }
+
+@media (max-width: 1199px) {
+  .header-contact__phone {
+    letter-spacing: .02em; } }
+
+@media (max-width: 767px) {
+  .header-contact__phone {
+    letter-spacing: .02em; } }
 
 .header-presentation {
   display: -webkit-box;
@@ -539,7 +547,9 @@ input[type="radio"].visually-hidden {
       height: 345px; }
   .simulator__video {
     top: 215%;
-    left: 30.5%;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
     background-image: url("../img/video-tablet.png");
     width: 266px;
     height: 167px; }
@@ -618,6 +628,9 @@ input[type="radio"].visually-hidden {
   position: relative;
   padding-bottom: 121px;
   overflow: hidden; }
+
+.tickets__item--none {
+  display: none; }
 
 .tickets__container {
   padding: 115px 12px 78px;
@@ -1173,8 +1186,8 @@ input[type="radio"].visually-hidden {
   min-width: 320px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-left: 21px;
-  padding-right: 20px;
+  padding-left: 17px;
+  padding-right: 55px;
   margin: 0 auto; }
 
 .slider__wrapper {
@@ -1235,16 +1248,17 @@ input[type="radio"].visually-hidden {
 
 .slider__controls-list {
   position: absolute;
+  margin: 0;
   width: 100%;
   top: 44%;
   left: 0;
-  margin-top: -17px;
-  z-index: 1; }
+  z-index: 1;
+  padding: 0 20px;
+  list-style: none; }
 
 .slider__controls-list,
 .slider__list {
   list-style: none;
-  padding: 0;
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;

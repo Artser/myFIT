@@ -181,7 +181,8 @@
 
   .simulator__video {
     top: 215%;
-    left: 30.5%;
+    left: 50%;
+    transform: translate(-50%);
     background-image: url("../img/video-tablet.png");
     width: 266px;
     height: 167px;

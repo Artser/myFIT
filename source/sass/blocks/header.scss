@@ -17,7 +17,7 @@
   @media (max-width: $tablet) {
     padding-top: 39px;
     padding-left: 44px;
-    padding-right: 43px;
+    padding-right: 44px;
   }
 
   @media (max-width: $mobile) {
@@ -55,7 +55,16 @@
     opacity: 0.5;
   }
 }
-
+@media (max-width: $tablet) {
+  .header-contact__phone {
+    letter-spacing: .02em;
+  }
+}
+@media (max-width: $mobile) {
+.header-contact__phone {
+  letter-spacing: .02em;
+}
+}
 .header-presentation {
   display: flex;
   padding-bottom: 50px;
