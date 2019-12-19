@@ -7,28 +7,30 @@
   // background-size: 425px 494px;
   // background-position: 100% 106%;
 }
-.tickets__item--none{
+
+.tickets__item--none {
   display: none;
 }
+
 .tickets__container {
   padding: 115px 12px 78px;
   background: #f8f9fc;
   text-align: center;
   //flex: 0 0 100%;
 
-   &::after {
-  background: transparent url("../img/disk-desktop.png") no-repeat;
-  //right: -80px;
-  //bottom: -72px;
-   position: absolute;
-  content: "";
-   width: 425px;
-   height: 494px;
-   background-size: cover;
-   transform: translateX(395px);
-  /* top: 449px; */
-   bottom: -72px;
-   }
+  &::after {
+    background: transparent url("../img/disk-desktop.png") no-repeat;
+    //right: -80px;
+    //bottom: -72px;
+    position: absolute;
+    content: "";
+    width: 425px;
+    height: 494px;
+    background-size: cover;
+    transform: translateX(395px);
+    /* top: 449px; */
+    bottom: -72px;
+  }
 }
 
 .tickets__title {
@@ -94,32 +96,21 @@
   }
 }
 
-
 .tickets__tab {
   position: relative;
   margin: 0 auto;
   max-width: 1160px;
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   justify-content: space-between;
   z-index: 2;
 }
 
-//  .tickets__list > .tickets__item {
-//    width: 31%;
-//    flex-grow: 0;
-//    flex-shrink: 1;
-//   margin-bottom: 40px;
-
-//    &:not(:nth-of-type(3n)) {
-//      margin-right: 3.5%;
-//    }
-//  }
- .tickets__item {
+.tickets__item {
   width: 31%;
   //flex-grow: 0;
   //flex-shrink: 1;
- margin-bottom: 40px;
+  margin-bottom: 40px;
 
   &:not(:nth-of-type(3n)) {
     margin-right: 3.5%;
@@ -234,10 +225,7 @@
     }
   }
 }
-.tickets__tab {
-  display: none;
 
-  &--open {
-    display: flex;
-  }
+.tickets__tab--open {
+  display: flex;
 }

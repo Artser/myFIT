@@ -168,11 +168,11 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 1199px) {
   .header-contact__phone {
-    letter-spacing: .02em; } }
+    letter-spacing: 0.02em; } }
 
 @media (max-width: 767px) {
   .header-contact__phone {
-    letter-spacing: .02em; } }
+    letter-spacing: 0.02em; } }
 
 .header-presentation {
   display: -webkit-box;
@@ -713,9 +713,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   margin: 0 auto;
   max-width: 1160px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
@@ -796,12 +794,10 @@ input[type="radio"].visually-hidden {
     .tickets__tab > .tickets__item:nth-of-type(n) {
       margin: 0 auto 34px; } }
 
-.tickets__tab {
-  display: none; }
-  .tickets__tab--open {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
+.tickets__tab--open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .abonement {
   position: relative;
@@ -1858,7 +1854,8 @@ input[type="radio"].visually-hidden {
 .review-wrapper {
   margin: 0 auto;
   max-width: 1160px;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
 
 .review h2 {
   margin: 0;
@@ -1882,27 +1879,35 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  .review__list .active {
+    display: block; }
 
 .review__list-slider {
   margin: 0;
   padding: 0;
+  position: absolute;
   width: 24px;
   height: 24px;
   background-color: transparent;
   border: none;
   border-left: 1px solid #afafaf;
   border-bottom: 1px solid #afafaf;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 1; }
 
 .review__list-slider-prev {
   margin-right: 28px;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg); }
+          transform: rotate(45deg);
+  left: 21.5%;
+  top: 61%; }
 
 .review__list-slider-next {
   margin-left: 28px;
   -webkit-transform: rotate(225deg);
-          transform: rotate(225deg); }
+          transform: rotate(225deg);
+  right: 21.5%;
+  top: 61%; }
 
 .review__list-slider-prev:hover,
 .review__list-slider-prev:focus {
@@ -1934,7 +1939,8 @@ input[type="radio"].visually-hidden {
   min-height: 242px;
   background-color: #1c3374;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  display: none; }
 
 .review__item--first {
   background-image: url("../img/review-foto-desktop@1x.png");
@@ -1966,9 +1972,6 @@ input[type="radio"].visually-hidden {
   line-height: 140%;
   color: #ffffff; }
 
-.review__item:not(:first-of-type) {
-  display: none; }
-
 .review__image {
   position: absolute;
   width: 80px;
@@ -1976,9 +1979,18 @@ input[type="radio"].visually-hidden {
   left: 62px;
   top: 62px; }
 
-@media (max-width: 1023px) {
+@media (max-width: 1199px) {
   .review {
-    padding: 96px 45px 40px; }
+    padding: 96px 96px 40px; }
+  .review__list-slider-prev {
+    left: -8%;
+    margin-right: 31px;
+    margin-bottom: 4px; }
+  .review__list-slider-next {
+    right: -6.5%;
+    top: 58%;
+    margin-left: 31px;
+    margin-top: 4px; }
   .review h2 {
     margin-bottom: 41px;
     font-size: 42px;
@@ -1986,16 +1998,11 @@ input[type="radio"].visually-hidden {
   .review__list {
     padding: 0 6px; }
   .review__item {
-    padding: 54px 63px 56px 173px;
-    width: 100%; }
+    padding: 54px 63px 56px 0;
+    width: 100%;
+    padding-left: 30.5%; }
   .review__image {
     left: 65px; }
-  .review__list-slider-prev {
-    margin-right: 31px;
-    margin-bottom: 4px; }
-  .review__list-slider-next {
-    margin-left: 31px;
-    margin-top: 4px; }
   .review__list-slider-prev:hover,
   .review__list-slider-prev:focus {
     margin-right: 19px; }
@@ -2026,7 +2033,7 @@ input[type="radio"].visually-hidden {
     margin-top: 8px;
     margin-bottom: 23px;
     line-height: 130%;
-    margin-left: 107px; }
+    margin-left: 55%; }
   .review__item p {
     text-align: center; }
   .review__image {
@@ -2053,7 +2060,7 @@ input[type="radio"].visually-hidden {
     margin-right: 17px;
     margin-bottom: 0; }
   .review__list-slider-next {
-    margin-left: 17px;
+    margin-left: 0;
     margin-top: 0; }
   .review__list-slider-prev:hover,
   .review__list-slider-prev:focus {

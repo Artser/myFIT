@@ -55,16 +55,19 @@
     opacity: 0.5;
   }
 }
+
 @media (max-width: $tablet) {
   .header-contact__phone {
-    letter-spacing: .02em;
+    letter-spacing: 0.02em;
   }
 }
+
 @media (max-width: $mobile) {
-.header-contact__phone {
-  letter-spacing: .02em;
+  .header-contact__phone {
+    letter-spacing: 0.02em;
+  }
 }
-}
+
 .header-presentation {
   display: flex;
   padding-bottom: 50px;
