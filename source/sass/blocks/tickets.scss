@@ -1,7 +1,7 @@
 .tickets {
   background: white;
   position: relative;
-  padding-bottom: 121px;
+  padding-bottom: 80px;
   overflow: hidden;
   // background: url("../img/disk-desktop.png") no-repeat;
   // background-size: 425px 494px;
@@ -94,7 +94,8 @@
   }
 }
 
-.tickets__list {
+
+.tickets__tab {
   position: relative;
   margin: 0 auto;
   max-width: 1160px;
@@ -104,16 +105,30 @@
   z-index: 2;
 }
 
-// .tickets__list > .pass__item {
-//   width: 31%;
-//   flex-grow: 0;
-//   flex-shrink: 1;
+//  .tickets__list > .tickets__item {
+//    width: 31%;
+//    flex-grow: 0;
+//    flex-shrink: 1;
 //   margin-bottom: 40px;
 
-//   &:not(:nth-of-type(3n)) {
-//     margin-right: 3.5%;
-//   }
-// }
+//    &:not(:nth-of-type(3n)) {
+//      margin-right: 3.5%;
+//    }
+//  }
+ .tickets__item {
+  width: 31%;
+  //flex-grow: 0;
+  //flex-shrink: 1;
+ margin-bottom: 40px;
+
+  &:not(:nth-of-type(3n)) {
+    margin-right: 3.5%;
+  }
+}
+
+.tickets__tab > .tickets__tab--open {
+  display: flex;
+}
 
 @media (max-width: $tablet) {
   .tickets {
@@ -156,7 +171,7 @@
     display: block;
   }
 
-  .tickets__list > .tickets__item {
+  .tickets__tab > .tickets__item {
     width: 65.3%;
 
     &:nth-of-type(n) {
@@ -210,12 +225,19 @@
     }
   }
 
-  .tickets__list > .tickets__item {
+  .tickets__tab > .tickets__item {
     width: 100%;
     z-index: initial;
 
     &:nth-of-type(n) {
       margin: 0 auto 34px;
     }
+  }
+}
+.tickets__tab {
+  display: none;
+
+  &--open {
+    display: flex;
   }
 }
