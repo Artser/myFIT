@@ -70,39 +70,39 @@ if (tabElement) {
 }
 
 var iter = 0;
-var slider_review = document.querySelector("#review-wrapper");
-var prev_rev = document.querySelector("#prev");
-var next_rev = document.querySelector("#next");
-var slider_items = slider_review.querySelectorAll(
+var sliderReview = document.querySelector("#review-wrapper");
+var prevRev = document.querySelector("#prev");
+var nextRev = document.querySelector("#next");
+var sliderItems = sliderReview.querySelectorAll(
   ".review__list .review__item"
 );
 
-console.log(slider_items);
+console.log(sliderItems);
 
-next_rev.addEventListener("click", function() {
+nextRev.addEventListener("click", function() {
   console.log(iter);
 
-  if (slider_items.length > iter + 1) {
-    slider_items[iter].classList.remove("active");
+  if (sliderItems.length > iter + 1) {
+    sliderItems[iter].classList.remove("active");
     iter++;
-    slider_items[iter].classList.add("active");
+    sliderItems[iter].classList.add("active");
   } else {
-    slider_items[iter].classList.remove("active");
+    sliderItems[iter].classList.remove("active");
     iter = 0;
-    slider_items[iter].classList.add("active");
+    sliderItems[iter].classList.add("active");
   }
 });
 
-prev_rev.addEventListener("click", function() {
+prevRev.addEventListener("click", function() {
   console.log(iter);
 
   if (iter - 1 >= 0) {
-    slider_items[iter].classList.remove("active");
+    sliderItems[iter].classList.remove("active");
     iter--;
-    slider_items[iter].classList.add("active");
+    sliderItems[iter].classList.add("active");
   } else {
-    slider_items[iter].classList.remove("active");
-    iter = slider_items.length - 1;
-    slider_items[iter].classList.add("active");
+    sliderItems[iter].classList.remove("active");
+    iter = sliderItems.length - 1;
+    sliderItems[iter].classList.add("active");
   }
 });

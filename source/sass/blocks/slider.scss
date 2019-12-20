@@ -199,7 +199,7 @@
   }
 }
 
-@media (max-width: $tablet-width-max) {
+@media (max-width: $tablet) {
   .slider {
     max-width: 680px;
     padding-left: 55px;
@@ -258,7 +258,7 @@
   }
 }
 
-@media (max-width: $phone-width-max) {
+@media (max-width: $mobile) {
   .slider {
     max-width: 320px;
     padding-left: 25px;
