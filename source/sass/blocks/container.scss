@@ -17,6 +17,7 @@
     padding: 0 15px;
   }
 }
+
 .container-wrap {
   max-width: 1250px;
   margin: 0 auto;
@@ -26,7 +27,7 @@
 }
 
 @media (max-width: $table-width) {
-  .container__hidden {
+  .container-wrap__hidden {
     max-width: 100%;
     margin: 0;
     padding: 0;
@@ -39,7 +40,7 @@
     padding-right: 15px;
   }
 
-  .container__hidden {
+  .container-wrap__hidden {
     max-width: 100%;
     margin: 0;
     padding: 0;

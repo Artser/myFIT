@@ -18,6 +18,7 @@
   display: flex;
   flex-wrap: wrap;
 }
+
 @media (max-width: $table-width) {
   .wrapp-connection {
     background: none;

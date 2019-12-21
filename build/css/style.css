@@ -101,7 +101,7 @@ input[type="radio"].visually-hidden {
   padding-right: 45px; }
 
 @media (max-width: 1023px) {
-  .container__hidden {
+  .container-wrap__hidden {
     max-width: 100%;
     margin: 0;
     padding: 0; } }
@@ -110,7 +110,7 @@ input[type="radio"].visually-hidden {
   .container-wrap {
     padding-left: 15px;
     padding-right: 15px; }
-  .container__hidden {
+  .container-wrap__hidden {
     max-width: 100%;
     margin: 0;
     padding: 0; } }
@@ -2078,10 +2078,6 @@ input[type="radio"].visually-hidden {
   .review__slider-wrap {
     padding-left: 47px;
     padding-right: 47px; }
-  .review__list-slider-prev {
-    left: 18px; }
-  .review__list-slider-next {
-    right: 18px; }
   .review h2 {
     margin-bottom: 41px;
     font-size: 32px;
@@ -2131,10 +2127,12 @@ input[type="radio"].visually-hidden {
     height: 14px; }
   .review__list-slider-prev {
     margin-right: 17px;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    left: 18px; }
   .review__list-slider-next {
     margin-left: 0;
-    margin-top: 0; }
+    margin-top: 0;
+    right: 18px; }
   .review__list-slider-prev:hover,
   .review__list-slider-prev:focus {
     margin-right: 3px; }
@@ -2535,13 +2533,13 @@ input[type="radio"].visually-hidden {
   .unpaid__title {
     font-size: 32px;
     line-height: 32px;
-    margin-bottom: 32px; }
+    margin-bottom: 35px; }
   .unpaid-form {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-bottom: 39px; }
     .unpaid-form input {
-      width: 100%; }
+      width: 290px; }
     .unpaid-form input[name="name"] {
       margin-bottom: 30px; } }
 
@@ -2718,7 +2716,7 @@ input[type="radio"].visually-hidden {
 @media (max-width: 767px) {
   .contacts {
     padding-top: 68px;
-    padding-bottom: 58px;
+    padding-bottom: 56px;
     padding-left: 15px;
     padding-right: 15px;
     display: -webkit-box;
@@ -2823,7 +2821,7 @@ input[type="radio"].visually-hidden {
   .footer-nav {
     width: 82%;
     padding-left: 0;
-    margin-bottom: 19px; }
+    margin-bottom: 14px; }
   .footer-nav__list {
     -webkit-box-align: end;
         -ms-flex-align: end;
