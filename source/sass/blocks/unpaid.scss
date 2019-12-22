@@ -31,6 +31,7 @@
     box-sizing: border-box;
     height: 30px;
     color: #ffffff;
+    font-family: $font;
   }
 
   & input::placeholder {
@@ -54,9 +55,16 @@
   padding-top: 16px;
   padding-bottom: 16px;
   color: #ffffff;
+  font-family: $font;
 
   &:hover {
     opacity: 0.5;
+  }
+}
+
+@media (max-width: 1200px) {
+  .unpaid-form input {
+    width: 103%;
   }
 }
 
@@ -107,11 +115,21 @@
     margin-bottom: 39px;
 
     & input {
-      width: 290px;
+
+      max-width: 97%;
     }
 
     & input[name="name"] {
       margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .unpaid-form {
+    & input {
+      width: 290px;
+      max-width: initial;
     }
   }
 }

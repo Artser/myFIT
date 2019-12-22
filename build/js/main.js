@@ -106,3 +106,7 @@ prevRev.addEventListener("click", function() {
     sliderItems[iter].classList.add("active");
   }
 });
+
+var phoneMask2 = IMask(document.getElementById('feedback-phone2'), {
+  mask: '+{7}(000)000-00-00'
+});

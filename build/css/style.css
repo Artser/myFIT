@@ -1544,19 +1544,10 @@ input[type="radio"].visually-hidden {
   margin-right: 0;
   width: calc(50% - 160px); }
 
-.advantage__item:nth-child(n + 3):nth-child(odd) ::before {
+.advantage__item-line::before {
   content: "";
   position: absolute;
-  top: -71px;
-  left: -20px;
-  width: 100%;
-  height: 2px;
-  background: rgba(209, 10, 66, 0.2); }
-
-.advantage__item-line ::before {
-  content: "";
-  position: absolute;
-  top: 164px;
+  top: 166px;
   left: 0;
   width: 100%;
   height: 2px;
@@ -1664,10 +1655,9 @@ input[type="radio"].visually-hidden {
   .advantage__text h3 {
     margin-bottom: 2px;
     font-size: 20px; }
-  .advantage__item:nth-child(n + 3):nth-child(odd) ::before {
-    content: none; }
-  .advantage__item-line ::before {
-    content: none; }
+  .advantage__item-line::before {
+    content: none;
+    opacity: 0; }
   .advantage__item:first-of-type {
     padding-left: 0; }
   .advantage__item:first-of-type p {
@@ -2464,7 +2454,8 @@ input[type="radio"].visually-hidden {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     height: 30px;
-    color: #ffffff; }
+    color: #ffffff;
+    font-family: "Roboto Condensed", "Tahoma", sans-serif; }
   .unpaid-form input::-webkit-input-placeholder {
     color: #ffffff;
     font-size: 14px;
@@ -2501,9 +2492,14 @@ input[type="radio"].visually-hidden {
   background-color: transparent;
   padding-top: 16px;
   padding-bottom: 16px;
-  color: #ffffff; }
+  color: #ffffff;
+  font-family: "Roboto Condensed", "Tahoma", sans-serif; }
   .unpaid__btn:hover {
     opacity: 0.5; }
+
+@media (max-width: 1200px) {
+  .unpaid-form input {
+    width: 103%; } }
 
 @media (max-width: 1023px) {
   .unpaid {
@@ -2539,9 +2535,14 @@ input[type="radio"].visually-hidden {
         flex-wrap: wrap;
     margin-bottom: 39px; }
     .unpaid-form input {
-      width: 290px; }
+      max-width: 97%; }
     .unpaid-form input[name="name"] {
       margin-bottom: 30px; } }
+
+@media (max-width: 440px) {
+  .unpaid-form input {
+    width: 290px;
+    max-width: initial; } }
 
 .place {
   width: 229px;
@@ -2637,6 +2638,10 @@ input[type="radio"].visually-hidden {
     font-weight: bold;
     font-size: 16px;
     line-height: 24px; }
+  .communication__tel:hover,
+  .communication__mail:hover {
+    text-decoration: none;
+    opacity: 0.7; }
 
 .communication__item:first-of-type {
   margin-bottom: 16px; }
