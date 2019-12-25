@@ -45,7 +45,7 @@
   width: 127px;
 }
 
-@media (max-width: $table-width) {
+@media (max-width: $tablet) {
   .place__address,
   .place__schedule {
     font-size: 18px;

@@ -18,15 +18,15 @@
   }
 }
 
-.container-wrap {
-  max-width: 1250px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  padding-left: 45px;
-  padding-right: 45px;
-}
+ .container-wrap {
+   max-width: 1250px;
+   margin: 0 auto;
+   box-sizing: border-box;
+   padding-left: 45px;
+   padding-right: 45px;
+ }
 
-@media (max-width: $table-width) {
+@media (max-width: $tablet) {
   .container-wrap__hidden {
     max-width: 100%;
     margin: 0;
@@ -35,10 +35,10 @@
 }
 
 @media (max-width: $mobile) {
-  .container-wrap {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+   .container-wrap {
+     padding-left: 15px;
+     padding-right: 15px;
+   }
 
   .container-wrap__hidden {
     max-width: 100%;

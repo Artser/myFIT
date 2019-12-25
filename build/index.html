@@ -519,20 +519,17 @@
         <div class="connection">
           <section class="unpaid">
             <h2 class="unpaid__title">Бесплатное занятие</h2>
-            <form method="post" action="#">
-              <div class="unpaid-form">
-                <label class="unpaid-form__label ">
-                  <span class="visually-hidden">Имя</span>
-                  <input id="js-modal-name" type="text" name="name" minlength="3" maxlength="256" placeholder="Имя" required="">
-                </label>
-                <label class="unpaid-form__label ">
-                  <span class="visually-hidden">Телефон</span>
-                  <input type="tel" name="tel" id="feedback-phone2" placeholder="Телефон" required="">
-                </label>
+            <form class="filter" action="/echo" method="get">
+              <div class="filter__type">
+                 <label class="visually-hidden" for="name">Имя</label>
+                <input class="filter__input" type="text" name="name" id="name" placeholder="Имя" required="">
+                <label class="visually-hidden" for="phone">Телефон</label>
+                <input class="filter__input" type="tel" name="tel" id="feedback-phone2" placeholder="Телефон" required="">
 
               </div>
-               <button type="submit" class="unpaid__btn">Отправить</button>
+              <button class="unpaid__btn" type="submit">Отправить</button>
             </form>
+
           </section>
           <section class="contacts">
             <h2 class="contacts__title">Контакты</h2>
@@ -560,13 +557,10 @@
               </li>
             </ul>
           </section>
+
         </div>
       </div>
     </div>
-
-
-
-
   </main>
   <footer class="footer">
     <div class="footer__wrapp">
@@ -595,6 +589,7 @@
               <li class="footer-nav__item footer-column__item">
                 <a href="#">Расписание</a>
               </li>
+
             </ul>
           </li>
         </ul>
