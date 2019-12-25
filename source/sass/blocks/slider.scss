@@ -77,6 +77,10 @@
   transform: translate(0, -50%);
 }
 
+.slider__btn:hover {
+  opacity: 0.5;
+}
+
 .slider__controls-list {
   position: absolute;
   width: 100%;
@@ -323,5 +327,9 @@
     padding-left: 21%;
     padding-right: 0;
     margin-top: 37px;
+  }
+
+  .slider__title {
+    bottom: 18px;
   }
 }

@@ -415,12 +415,16 @@ input[type="radio"].visually-hidden {
     opacity: 0.5; }
 
 .simulator {
+  padding: 0 103px;
   padding: 120px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-left: 19px;
-  margin-bottom: 113px; }
+  margin-bottom: 113px;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden; }
 
 .simulator__description {
   width: 410px;
@@ -448,6 +452,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   top: 27%;
   left: 36%;
+  cursor: pointer;
   width: 100px;
   height: 100px;
   padding: 12px;
@@ -615,12 +620,14 @@ input[type="radio"].visually-hidden {
     padding: 10px 27px 0 0;
     text-align: left; }
   .simulator__images {
-    width: 320px;
     height: 313px;
     background-repeat: no-repeat;
     padding: 0;
     background-image: url("../img/hall-mobile.png");
-    margin-bottom: 136px; }
+    margin-bottom: 136px;
+    width: 100%;
+    background-size: cover;
+    background-position: center; }
   .simulator__images > img {
     margin-bottom: 40px;
     height: auto;
@@ -651,7 +658,8 @@ input[type="radio"].visually-hidden {
   background: white;
   position: relative;
   padding-bottom: 80px;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-top: 115px; }
 
 .tickets__item--none {
   display: none; }
@@ -704,7 +712,8 @@ input[type="radio"].visually-hidden {
       -ms-flex-align: end;
           align-items: flex-end;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  max-width: 400px; }
 
 .tickets__btn {
   margin: 0;
@@ -739,9 +748,9 @@ input[type="radio"].visually-hidden {
   display: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   z-index: 2; }
 
 .tickets__item {
@@ -757,7 +766,8 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 1199px) {
   .tickets {
-    padding-bottom: 100px; }
+    padding-bottom: 100px;
+    margin-top: 0; }
   .tickets__container {
     padding: 98px 45px 60px; }
     .tickets__container::after {
@@ -1287,6 +1297,9 @@ input[type="radio"].visually-hidden {
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%); }
 
+.slider__btn:hover {
+  opacity: 0.5; }
+
 .slider__controls-list {
   position: absolute;
   width: 100%;
@@ -1468,7 +1481,9 @@ input[type="radio"].visually-hidden {
   .slider__achievement-list {
     padding-left: 21%;
     padding-right: 0;
-    margin-top: 37px; } }
+    margin-top: 37px; }
+  .slider__title {
+    bottom: 18px; } }
 
 .advantage {
   padding: 114px 15px 118px;
@@ -1961,21 +1976,14 @@ input[type="radio"].visually-hidden {
   top: 50%; }
 
 .review__list-slider-prev:hover,
-.review__list-slider-prev:focus {
-  width: 40px;
-  height: 40px;
-  margin-right: 12px; }
+.review__list-slider-next:hover {
+  opacity: 0.5;
+  outline: none; }
 
 .review__list-slider-prev:active {
   width: 24px;
   height: 24px;
   margin-right: 28px; }
-
-.review__list-slider-next:hover,
-.review__list-slider-next:focus {
-  width: 40px;
-  height: 40px;
-  margin-left: 12px; }
 
 .review__list-slider-next:active {
   width: 24px;
@@ -2092,7 +2100,8 @@ input[type="radio"].visually-hidden {
     margin-top: 8px;
     margin-bottom: 23px;
     line-height: 130%;
-    margin-left: 55%; }
+    margin-left: 55%;
+    min-height: 52px; }
   .review__item p {
     text-align: center; }
   .review__image {
@@ -2420,7 +2429,6 @@ input[type="radio"].visually-hidden {
       z-index: 0; } }
 
 .unpaid {
-  width: 50%;
   padding-top: 61px;
   padding-bottom: 69px;
   padding-right: 170px;
@@ -2447,7 +2455,7 @@ input[type="radio"].visually-hidden {
           justify-content: space-between;
   margin-bottom: 28px; }
   .unpaid-form input {
-    width: 190px;
+    width: calc(50% - 15px);
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #74819c;
@@ -2455,7 +2463,11 @@ input[type="radio"].visually-hidden {
             box-sizing: border-box;
     height: 30px;
     color: #ffffff;
-    font-family: "Roboto Condensed", "Tahoma", sans-serif; }
+    font-family: "Roboto Condensed", "Tahoma", sans-serif;
+    font-size: 14px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0; }
   .unpaid-form input::-webkit-input-placeholder {
     color: #ffffff;
     font-size: 14px;
@@ -2497,10 +2509,6 @@ input[type="radio"].visually-hidden {
   .unpaid__btn:hover {
     opacity: 0.5; }
 
-@media (max-width: 1200px) {
-  .unpaid-form input {
-    width: 103%; } }
-
 @media (max-width: 1023px) {
   .unpaid {
     width: 100%;
@@ -2516,9 +2524,7 @@ input[type="radio"].visually-hidden {
   .unpaid__title {
     width: 100%;
     font-size: 42px;
-    line-height: 42px; }
-  .unpaid-form input {
-    width: 206px; } }
+    line-height: 42px; } }
 
 @media (max-width: 767px) {
   .unpaid {
@@ -2535,14 +2541,9 @@ input[type="radio"].visually-hidden {
         flex-wrap: wrap;
     margin-bottom: 39px; }
     .unpaid-form input {
-      max-width: 97%; }
+      width: 100%; }
     .unpaid-form input[name="name"] {
       margin-bottom: 30px; } }
-
-@media (max-width: 440px) {
-  .unpaid-form input {
-    width: 290px;
-    max-width: initial; } }
 
 .place {
   width: 229px;

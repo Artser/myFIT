@@ -1,5 +1,5 @@
 .unpaid {
-  width: 50%;
+  //max-width: 683px;
   padding-top: 61px;
   padding-bottom: 69px;
   padding-right: 170px;
@@ -24,7 +24,7 @@
   margin-bottom: 28px;
 
   & input {
-    width: 190px;
+    width: calc(50% - 15px);
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #74819c;
@@ -32,6 +32,9 @@
     height: 30px;
     color: #ffffff;
     font-family: $font;
+    font-size: 14px;
+    box-shadow: none;
+    border-radius: 0;
   }
 
   & input::placeholder {
@@ -40,6 +43,10 @@
     line-height: 16px;
   }
 }
+
+// .unpaid-form label {
+//   width: 100%;
+// }
 
 .unpaid__btn {
   border: 3px solid #ffffff;
@@ -62,11 +69,11 @@
   }
 }
 
-@media (max-width: 1200px) {
-  .unpaid-form input {
-    width: 103%;
-  }
-}
+// @media (max-width: 1200px) {
+//   .unpaid-form input {
+//     width: calc(50% - 10px);
+//   }
+// }
 
 @media (max-width: $table-width) {
   .unpaid {
@@ -89,11 +96,11 @@
     line-height: 42px;
   }
 
-  .unpaid-form {
-    & input {
-      width: 206px;
-    }
-  }
+  // .unpaid-form {
+  //   & input {
+  //     width: 206px;
+  //   }
+  // }
 }
 
 @media (max-width: $mobile) {
@@ -114,10 +121,10 @@
     flex-wrap: wrap;
     margin-bottom: 39px;
 
-    & input {
+     & input {
 
-      max-width: 97%;
-    }
+      width: 100%;
+     }
 
     & input[name="name"] {
       margin-bottom: 30px;
@@ -125,11 +132,11 @@
   }
 }
 
-@media (max-width: 440px) {
-  .unpaid-form {
-    & input {
-      width: 290px;
-      max-width: initial;
-    }
-  }
-}
+// @media (max-width: 440px) {
+//   .unpaid-form {
+//     & input {
+//       width: 290px;
+//       max-width: initial;
+//     }
+//   }
+// }

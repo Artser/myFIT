@@ -75,10 +75,10 @@
 }
 
 .review__list-slider-prev:hover,
-.review__list-slider-prev:focus {
-  width: 40px;
-  height: 40px;
-  margin-right: 12px;
+.review__list-slider-next:hover {
+ opacity: 0.5;
+  //margin-right: 12px;
+  outline: none;
 }
 
 .review__list-slider-prev:active {
@@ -87,12 +87,7 @@
   margin-right: 28px;
 }
 
-.review__list-slider-next:hover,
-.review__list-slider-next:focus {
-  width: 40px;
-  height: 40px;
-  margin-left: 12px;
-}
+
 
 .review__list-slider-next:active {
   width: 24px;
@@ -260,6 +255,7 @@
     margin-bottom: 23px;
     line-height: 130%;
     margin-left: 55%;
+    min-height: 52px;
   }
 
   .review__item p {

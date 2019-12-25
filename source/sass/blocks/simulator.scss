@@ -1,8 +1,13 @@
 .simulator {
+  padding: 0 103px;
   padding: 120px 0;
   display: flex;
   padding-left: 19px;
   margin-bottom: 113px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  overflow: hidden;
 }
 
 .simulator__description {
@@ -24,29 +29,28 @@
   color: #102654;
 }
 
-.button {
-  position: absolute;
-  display: flex;
-  top: 27%;
-  left: 36%;
-
-  width: 100px;
-  height: 100px;
-  padding: 12px;
-  border-radius: 50%;
-  background-image: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
-  background-clip: content-box;
-  border: 2px solid transparent;
-  border-image-source: url("../img/border-img.png");
-  border-image-slice: fill 1.5;
-  outline: none;
-
-  & svg {
-    margin: auto;
-    margin-right: 27px;
-    fill: white;
-  }
-}
+ .button {
+   position: absolute;
+   display: flex;
+   top: 27%;
+   left: 36%;
+   cursor: pointer;
+   width: 100px;
+   height: 100px;
+   padding: 12px;
+   border-radius: 50%;
+   background-image: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
+   background-clip: content-box;
+   border: 2px solid transparent;
+   border-image-source: url("../img/border-img.png");
+   border-image-slice: fill 1.5;
+   outline: none;
+   & svg {
+     margin: auto;
+     margin-right: 27px;
+     fill: white;
+   }
+ }
 
 .button:hover {
   background-image: linear-gradient(44.89deg, #b80027 25.38%, #003d85 74.89%);
@@ -238,12 +242,14 @@
   }
 
   .simulator__images {
-    width: 320px;
     height: 313px;
     background-repeat: no-repeat;
     padding: 0;
     background-image: url("../img/hall-mobile.png");
     margin-bottom: 136px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
   }
 
   .simulator__images > img {

@@ -34,8 +34,8 @@ var swiper = new Swiper(".swiper-container", {
   },
 
   navigation: {
-    nextEl: ".slider__btn--prev",
-    prevEl: ".slider__btn--next"
+    nextEl: ".slider__btn--next",
+    prevEl: ".slider__btn--prev"
   }
 });
 
