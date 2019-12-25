@@ -31,7 +31,7 @@
   flex-wrap: wrap;
 }
 
-.filter__input {
+.filter__type input {
   padding: 0;
   font-family: $roboto;
   font-style: normal;
@@ -58,13 +58,13 @@
   }
 }
 
-.filter__input:hover,
-.filter__input:focus {
+.filter__type input:hover,
+.filter__type input:focus {
   outline: none;
   border-bottom: 2px solid $white;
 }
 
-.filter__input:active {
+.filter__type input:active {
   border-bottom: 2px solid #74819c;
 }
 
@@ -198,9 +198,12 @@
   .unpaid__title {
     font-size: 32px;
     line-height: 32px;
-    margin-bottom: 35px;
+    margin-bottom: 39px;
   }
-
+  .filter__type input{
+    width: 100%;
+    margin-bottom: 33px;
+  }
   .unpaid-form {
     flex-wrap: wrap;
     margin-bottom: 39px;
@@ -329,7 +332,7 @@
   }
 
   .filter__type {
-    margin-bottom: 37px;
+    margin-bottom: 6px;
     display: block;
   }
 
