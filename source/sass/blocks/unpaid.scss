@@ -68,7 +68,6 @@
   border-bottom: 2px solid #74819c;
 }
 
-
 .form-button {
   padding: 18px 10px 15px;
   font-family: $roboto;
@@ -194,13 +193,13 @@
   }
   .unpaid__btn {
     width: 100%;
-}
+  }
   .unpaid__title {
     font-size: 32px;
     line-height: 32px;
     margin-bottom: 39px;
   }
-  .filter__type input{
+  .filter__type input {
     width: 100%;
     margin-bottom: 33px;
   }
@@ -218,16 +217,7 @@
   }
 }
 
-// @media (max-width: 440px) {
-//   .unpaid-form {
-//     & input {
-//       width: 290px;
-//       max-width: initial;
-//     }
-//   }
-// }
-
-@media (max-width: $laptop-width) {
+@media (max-width: $tablet) {
   .contact {
     padding: 60px 0 42px;
   }
@@ -262,61 +252,9 @@
   .filter__input {
     width: calc(50% - 30px);
   }
-
-  .address {
-    padding: 69px 10px 20px 133px;
-    max-width: 100%;
-    border: none;
-    box-sizing: border-box;
-  }
-
-  .address h2 {
-    margin: 0;
-    margin-bottom: 33px;
-    font-size: 42px;
-    line-height: 42px;
-  }
-
-  .address__list {
-    margin: 0;
-    width: 100%;
-
-    &::after {
-      content: "";
-      left: calc(50% - 47px);
-      top: 8px;
-    }
-  }
-
-  .address__item {
-    width: 50%;
-  }
-
-  .address__item:nth-child(odd) {
-    margin-left: 0;
-  }
-
-  .address__item:not(:nth-child(-n + 2)) {
-    margin-top: 19px;
-  }
-
-  .address__item h3 {
-    margin-bottom: 6px;
-    font-size: 20px;
-  }
-
-  .address__item p {
-    font-size: 18px;
-    line-height: 152.34%;
-  }
-
-  .address__item a {
-    font-size: 18px;
-    line-height: 152.34%;
-  }
 }
 
-@media (max-width: $mobile-width) {
+@media (max-width: $mobile) {
   .contact {
     padding: 30px 0 23px;
   }
@@ -342,35 +280,5 @@
 
   .filter__input:not(:first-of-type) {
     margin-top: 36px;
-  }
-
-  .address {
-    padding: 69px 15px 40px;
-  }
-
-  .address h2 {
-    margin-bottom: 35px;
-    font-size: 32px;
-    line-height: 32px;
-  }
-
-  .address__list {
-    flex-direction: column;
-
-    &::after {
-      content: none;
-    }
-  }
-
-  .address__item {
-    width: 100%;
-  }
-
-  .address__item:nth-child(even) {
-    order: 1;
-  }
-
-  .address__item:not(:first-of-type) {
-    margin-top: 19px;
   }
 }
